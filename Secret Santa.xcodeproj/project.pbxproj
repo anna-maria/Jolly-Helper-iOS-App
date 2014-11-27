@@ -10,8 +10,8 @@
 		951B942F1A23BC1B00E86610 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B942E1A23BC1B00E86610 /* NavigationController.swift */; };
 		952B2B291A1D180B008BD906 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B2B281A1D180B008BD906 /* PageViewController.swift */; };
 		952B2B2B1A1D21B0008BD906 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B2B2A1A1D21B0008BD906 /* SecondViewController.swift */; };
+		9537B1AE1A26DEFA0058A585 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537B1AD1A26DEFA0058A585 /* TableViewController.swift */; };
 		954B34031A2598FE008DB090 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B34021A2598FE008DB090 /* DetailsController.swift */; };
-		95513C011A2441D30007A9DB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95513C001A2441D30007A9DB /* TableViewController.swift */; };
 		95BAF8A11A180D9B00AB03E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BAF8A01A180D9B00AB03E2 /* AppDelegate.swift */; };
 		95BAF8A31A180D9B00AB03E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BAF8A21A180D9B00AB03E2 /* ViewController.swift */; };
 		95BAF8A61A180D9B00AB03E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BAF8A41A180D9B00AB03E2 /* Main.storyboard */; };
@@ -34,8 +34,8 @@
 		951B942E1A23BC1B00E86610 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		952B2B281A1D180B008BD906 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		952B2B2A1A1D21B0008BD906 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9537B1AD1A26DEFA0058A585 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		954B34021A2598FE008DB090 /* DetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
-		95513C001A2441D30007A9DB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
 		95BAF89B1A180D9B00AB03E2 /* Secret Santa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Santa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BAF89F1A180D9B00AB03E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95BAF8A01A180D9B00AB03E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		95BAF89D1A180D9B00AB03E2 /* Secret Santa */ = {
 			isa = PBXGroup;
 			children = (
-				95513C001A2441D30007A9DB /* TableViewController.swift */,
+				9537B1AD1A26DEFA0058A585 /* TableViewController.swift */,
 				95BAF8A01A180D9B00AB03E2 /* AppDelegate.swift */,
 				95BAF8A21A180D9B00AB03E2 /* ViewController.swift */,
 				95BAF8A41A180D9B00AB03E2 /* Main.storyboard */,
@@ -228,8 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				954B34031A2598FE008DB090 /* DetailsController.swift in Sources */,
+				9537B1AE1A26DEFA0058A585 /* TableViewController.swift in Sources */,
 				952B2B2B1A1D21B0008BD906 /* SecondViewController.swift in Sources */,
-				95513C011A2441D30007A9DB /* TableViewController.swift in Sources */,
 				952B2B291A1D180B008BD906 /* PageViewController.swift in Sources */,
 				951B942F1A23BC1B00E86610 /* NavigationController.swift in Sources */,
 				95BAF8A31A180D9B00AB03E2 /* ViewController.swift in Sources */,
