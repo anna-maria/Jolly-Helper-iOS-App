@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var items:[String] = []
+    var items:[String : String] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class TableViewController: UITableViewController, UITableViewDataSource, UITable
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         let handler = {
-            (list: [String]) -> Void in
+            (list: [String : String]) -> Void in
             self.items = list
             dispatch_async(dispatch_get_main_queue()) {
                 self.tableView.reloadData()
@@ -34,22 +34,20 @@ class TableViewController: UITableViewController, UITableViewDataSource, UITable
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         
-        cell.textLabel.text = self.items[indexPath.row]
+        cell.textLabel.text = Array(self.items.keys)[indexPath.row]
         
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //go to details page
-        dispatch_async(dispatch_get_main_queue()) {
-            let vc: AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsController")
-            self.showViewController(vc as UIViewController, sender: vc)
-        }
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsController") as DetailsController
+        vc.toPass = Array(self.items.values)[indexPath.row]
+        self.showViewController(vc as UIViewController, sender: vc)
     }
     
-    func getPeople(handler:([String] -> Void))-> [String] {
-        let url = NSURL(string: "https://jolly-helper.herokuapp.com/persons")!
-        var nameList:[String] = []
+    func getPeople(handler:([String : String] -> Void))-> [String : String] {
+        let url = NSURL(string: "https://jolly-helper-staging.herokuapp.com/persons")!
+        var nameList:[String : String] = [:]
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
             
@@ -59,7 +57,7 @@ class TableViewController: UITableViewController, UITableViewDataSource, UITable
             var jsonArray = jsonOptional as NSArray
             
             for var index = 0; index < jsonArray.count ; ++index {
-                nameList.append(jsonOptional[index]["name"] as String)
+                nameList.updateValue(jsonOptional[index]["uid"] as String, forKey: jsonOptional[index]["name"] as String)
             }
             
             handler(nameList)

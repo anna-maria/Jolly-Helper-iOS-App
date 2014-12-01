@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
     @IBAction func submitSecretSanta(sender: UIButton) {
         
-        var request = NSMutableURLRequest(URL: NSURL(string: "https://jolly-helper.herokuapp.com/persons")!)
+        var request = NSMutableURLRequest(URL: NSURL(string: "https://jolly-helper-staging.herokuapp.com/persons")!)
         
         
         var session = NSURLSession.sharedSession()
@@ -52,14 +52,8 @@ class ViewController: UIViewController {
         
         var task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
             
-            println("Response: \(response)")
-            
             var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
-            
-            println("Body: \(strData)\n\n")
-            
             var err: NSError?
-            
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSArray
             
             // json = {"response":"Success","msg":"User login successfully."}
@@ -77,7 +71,6 @@ class ViewController: UIViewController {
                     var refreshAlert = UIAlertController(title: "Congrats!", message: "Thanks for joining! You'll be receiving an email shortly with your secret santa!", preferredStyle: UIAlertControllerStyle.Alert)
                 
                     refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
-                        println("Handle Ok logic here")
                         let vc: AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController")
                         self.showViewController(vc as UIViewController, sender: vc)
                     }))

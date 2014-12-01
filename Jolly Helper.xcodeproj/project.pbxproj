@@ -36,14 +36,14 @@
 		952B2B2A1A1D21B0008BD906 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9537B1AD1A26DEFA0058A585 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		954B34021A2598FE008DB090 /* DetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
-		95BAF89B1A180D9B00AB03E2 /* Secret Santa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Santa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BAF89B1A180D9B00AB03E2 /* Jolly Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jolly Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BAF89F1A180D9B00AB03E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95BAF8A01A180D9B00AB03E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BAF8A21A180D9B00AB03E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95BAF8A51A180D9B00AB03E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95BAF8A71A180D9B00AB03E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		95BAF8AA1A180D9B00AB03E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		95BAF8B01A180D9B00AB03E2 /* Secret SantaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Secret SantaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BAF8B01A180D9B00AB03E2 /* Jolly HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jolly HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BAF8B51A180D9B00AB03E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95BAF8B61A180D9B00AB03E2 /* Secret_SantaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret_SantaTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +69,8 @@
 		95BAF8921A180D9B00AB03E2 = {
 			isa = PBXGroup;
 			children = (
-				95BAF89D1A180D9B00AB03E2 /* Secret Santa */,
-				95BAF8B31A180D9B00AB03E2 /* Secret SantaTests */,
+				95BAF89D1A180D9B00AB03E2 /* Jolly Helper */,
+				95BAF8B31A180D9B00AB03E2 /* Jolly HelperTests */,
 				95BAF89C1A180D9B00AB03E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,13 +78,13 @@
 		95BAF89C1A180D9B00AB03E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95BAF89B1A180D9B00AB03E2 /* Secret Santa.app */,
-				95BAF8B01A180D9B00AB03E2 /* Secret SantaTests.xctest */,
+				95BAF89B1A180D9B00AB03E2 /* Jolly Helper.app */,
+				95BAF8B01A180D9B00AB03E2 /* Jolly HelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95BAF89D1A180D9B00AB03E2 /* Secret Santa */ = {
+		95BAF89D1A180D9B00AB03E2 /* Jolly Helper */ = {
 			isa = PBXGroup;
 			children = (
 				9537B1AD1A26DEFA0058A585 /* TableViewController.swift */,
@@ -99,6 +99,7 @@
 				951B942E1A23BC1B00E86610 /* NavigationController.swift */,
 				954B34021A2598FE008DB090 /* DetailsController.swift */,
 			);
+			name = "Jolly Helper";
 			path = "Secret Santa";
 			sourceTree = "<group>";
 		};
@@ -110,12 +111,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		95BAF8B31A180D9B00AB03E2 /* Secret SantaTests */ = {
+		95BAF8B31A180D9B00AB03E2 /* Jolly HelperTests */ = {
 			isa = PBXGroup;
 			children = (
 				95BAF8B61A180D9B00AB03E2 /* Secret_SantaTests.swift */,
 				95BAF8B41A180D9B00AB03E2 /* Supporting Files */,
 			);
+			name = "Jolly HelperTests";
 			path = "Secret SantaTests";
 			sourceTree = "<group>";
 		};
@@ -130,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95BAF89A1A180D9B00AB03E2 /* Secret Santa */ = {
+		95BAF89A1A180D9B00AB03E2 /* Jolly Helper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95BAF8BA1A180D9B00AB03E2 /* Build configuration list for PBXNativeTarget "Secret Santa" */;
+			buildConfigurationList = 95BAF8BA1A180D9B00AB03E2 /* Build configuration list for PBXNativeTarget "Jolly Helper" */;
 			buildPhases = (
 				95BAF8971A180D9B00AB03E2 /* Sources */,
 				95BAF8981A180D9B00AB03E2 /* Frameworks */,
@@ -142,14 +144,14 @@
 			);
 			dependencies = (
 			);
-			name = "Secret Santa";
+			name = "Jolly Helper";
 			productName = "Secret Santa";
-			productReference = 95BAF89B1A180D9B00AB03E2 /* Secret Santa.app */;
+			productReference = 95BAF89B1A180D9B00AB03E2 /* Jolly Helper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95BAF8AF1A180D9B00AB03E2 /* Secret SantaTests */ = {
+		95BAF8AF1A180D9B00AB03E2 /* Jolly HelperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95BAF8BD1A180D9B00AB03E2 /* Build configuration list for PBXNativeTarget "Secret SantaTests" */;
+			buildConfigurationList = 95BAF8BD1A180D9B00AB03E2 /* Build configuration list for PBXNativeTarget "Jolly HelperTests" */;
 			buildPhases = (
 				95BAF8AC1A180D9B00AB03E2 /* Sources */,
 				95BAF8AD1A180D9B00AB03E2 /* Frameworks */,
@@ -160,9 +162,9 @@
 			dependencies = (
 				95BAF8B21A180D9B00AB03E2 /* PBXTargetDependency */,
 			);
-			name = "Secret SantaTests";
+			name = "Jolly HelperTests";
 			productName = "Secret SantaTests";
-			productReference = 95BAF8B01A180D9B00AB03E2 /* Secret SantaTests.xctest */;
+			productReference = 95BAF8B01A180D9B00AB03E2 /* Jolly HelperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95BAF8961A180D9B00AB03E2 /* Build configuration list for PBXProject "Secret Santa" */;
+			buildConfigurationList = 95BAF8961A180D9B00AB03E2 /* Build configuration list for PBXProject "Jolly Helper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -196,8 +198,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95BAF89A1A180D9B00AB03E2 /* Secret Santa */,
-				95BAF8AF1A180D9B00AB03E2 /* Secret SantaTests */,
+				95BAF89A1A180D9B00AB03E2 /* Jolly Helper */,
+				95BAF8AF1A180D9B00AB03E2 /* Jolly HelperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,7 +252,7 @@
 /* Begin PBXTargetDependency section */
 		95BAF8B21A180D9B00AB03E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95BAF89A1A180D9B00AB03E2 /* Secret Santa */;
+			target = 95BAF89A1A180D9B00AB03E2 /* Jolly Helper */;
 			targetProxy = 95BAF8B11A180D9B00AB03E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -386,8 +388,8 @@
 				);
 				INFOPLIST_FILE = "Secret SantaTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secret Santa.app/Secret Santa";
+				PRODUCT_NAME = "Jolly HelperTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jolly Helper.app/Jolly Helper";
 			};
 			name = Debug;
 		};
@@ -401,15 +403,15 @@
 				);
 				INFOPLIST_FILE = "Secret SantaTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secret Santa.app/Secret Santa";
+				PRODUCT_NAME = "Jolly HelperTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jolly Helper.app/Jolly Helper";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95BAF8961A180D9B00AB03E2 /* Build configuration list for PBXProject "Secret Santa" */ = {
+		95BAF8961A180D9B00AB03E2 /* Build configuration list for PBXProject "Jolly Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95BAF8B81A180D9B00AB03E2 /* Debug */,
@@ -418,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95BAF8BA1A180D9B00AB03E2 /* Build configuration list for PBXNativeTarget "Secret Santa" */ = {
+		95BAF8BA1A180D9B00AB03E2 /* Build configuration list for PBXNativeTarget "Jolly Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95BAF8BB1A180D9B00AB03E2 /* Debug */,
@@ -427,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95BAF8BD1A180D9B00AB03E2 /* Build configuration list for PBXNativeTarget "Secret SantaTests" */ = {
+		95BAF8BD1A180D9B00AB03E2 /* Build configuration list for PBXNativeTarget "Jolly HelperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95BAF8BE1A180D9B00AB03E2 /* Debug */,
